@@ -1,0 +1,12 @@
+$fn=50;
+union(){
+	difference(){
+		difference(){
+			sphere(r=30);
+			translate(v=[0,0,-8])sphere(r=28);
+		}
+		translate(v=[-30,-30,-60])cube(size=60);
+	}
+	cylinder(r=2,h=25);
+	translate(v=[0,0,30])cylinder(h=3,r1=2,r2=0);	
+}
